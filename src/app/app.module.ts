@@ -1,9 +1,11 @@
 import { NgModule } from '@angular/core';
+import { FormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { AuthModule } from './auth/auth.module';
+import { ComponentsModule } from './components/components.module';
 import { NoPageFoundComponent } from './no-page-found/no-page-found.component';
 import { PagesModule } from './page/pages.module';
 
@@ -16,7 +18,8 @@ import { PagesModule } from './page/pages.module';
     BrowserModule,
     AppRoutingModule,
     PagesModule,
-    AuthModule
+    AuthModule,
+    ComponentsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
