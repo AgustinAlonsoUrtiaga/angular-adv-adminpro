@@ -8,6 +8,11 @@ import { SharedModule } from '../shared/shared.module';
 import { AppRoutingModule } from '../app-routing.module';
 import { ComponentsModule } from '../components/components.module';
 import { AccountSettingsComponent } from './account-settings/account-settings.component';
+import { PromesasComponent } from './promesas/promesas.component';
+import { RxJsComponent } from './rx-js/rx-js.component';
+import { BrowserModule } from '@angular/platform-browser';
+import { RegistrarseComponent } from './registrarse/registrarse.component';
+import { HttpClientModule } from '@angular/common/http';
 
 
 
@@ -19,6 +24,9 @@ import { AccountSettingsComponent } from './account-settings/account-settings.co
     Grafica1Component,
     ProgressComponent,
     AccountSettingsComponent,
+    PromesasComponent,
+    RxJsComponent,
+    RegistrarseComponent
   ],
   exports: [
     DashboardComponent,
@@ -26,12 +34,15 @@ import { AccountSettingsComponent } from './account-settings/account-settings.co
     Grafica1Component,
     ProgressComponent,
     AccountSettingsComponent,
+    PromesasComponent
   ],
   imports: [
     CommonModule,
     SharedModule,
     AppRoutingModule,
     ComponentsModule,
+    BrowserModule,
+    HttpClientModule
   ]
 })
 export class PagesModule { }

@@ -7,6 +7,7 @@ import { NoPageFoundComponent } from './no-page-found/no-page-found.component';
 import { PagesRoutingModule } from './page/pages.routing';
 
 const routes: Routes = [
+  
   { path: '**', component: NoPageFoundComponent},
 ];
 

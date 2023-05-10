@@ -1,0 +1,15 @@
+
+<select class="form-select" aria-label="Default select example">
+    <option selected *ngFor="let codigo of arrayFiltroPaises ">{{codigo.name}}</option>
+  </select>
+
+<div class="input-group mb-3">
+    <div class="input-group-prepend">
+        <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">País</button>
+        
+        <div class="dropdown-menu scrollable" >
+          <a class="dropdown-item "*ngFor="let codigo of arrayFiltroPaises ">{{codigo.code}}</a>
+        </div>
+    </div>
+
+    <input type="text" class="form-control" aria-label="Text input with dropdown button">
